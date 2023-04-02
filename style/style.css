@@ -1,8 +1,9 @@
-*{
+ *{
     box-sizing: border-box;
     outline: 1px solid greenyellow !important;
     
-}
+} 
+
 #frame-nav{
     margin-bottom: 70px;
 }
@@ -20,7 +21,7 @@ nav{
 }
 nav li{
     font-size: 19px;
-    padding: 0px 25px;
+    padding: 0px 15px;
     list-style-type: none;
 }
 ul{
@@ -32,18 +33,39 @@ ul{
 button{
     width: 60px;
     height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
 }
+/*.only-button{
+    width: 60px;
+    height: 40px;
+    background-color: white; 
+    border: none;
+    border-radius: 20px;
+}*/
+.only-button:active{
+    border: none;
+    background-color: black;
+    color: white;
+}
+/* button:active{
+    border: none;
+    background-color: black;
+    color: white;
+} */
 #logo-p{
     border-radius: 5px;
+}
+#logo-p:active{
+    background-color: gray;
 }
 #look-for{
     border-radius: 20px;
     background-color: rgba(217, 216, 216, 0.755);
     border: 0.5px solid white;
     width: 750px;
-    height: 50px;
-    
-    
+    height: 50px; 
 }
 #look-for:focus{
     outline: none;
@@ -53,10 +75,67 @@ button{
     background-color: black;
     border-radius: 25px;
 }
+#perfil:hover{
+    background-color: gray;
+}
+.button-nav{
+    display: contents;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+}
+.button-nav:hover{
+    background-color: gray;
+}
+.img-button-nav{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.img-button-nav:hover{
+    background-color: rgb(212, 198, 198);
+}
+.desplegable{
+    display: inline-block;
+    position: relative;
+}
+.desplegable-elementos{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
+    background-color: white;
+}
+.desplegable:hover .desplegable-elementos {
+    justify-content: left;
+    position: fixed;
+    display: block;
+    width: 100px;
+    height: auto;
+}
+.desplegable-elementos section{
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+.desplegable-elementos section:hover {
+    color: black;
+
+}
+.frame-options{
+    display: block;
+    margin-bottom: 5px;
+}
+.opt-button:hover{
+    background-color: rgb(212, 198, 198);
+}
 .feed-images{
     columns: 6;
-    
-    
 }
 .images{
     /* max-width: 100%; */
