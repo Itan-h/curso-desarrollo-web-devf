@@ -1,9 +1,8 @@
  *{
     box-sizing: border-box;
-    outline: 1px solid greenyellow !important;
+    /* outline: 1px solid greenyellow !important; */
     
 } 
-
 #frame-nav{
     margin-bottom: 70px;
 }
@@ -29,7 +28,6 @@ ul{
     flex-direction: row;
     align-items: center;
 }
-
 button{
     width: 60px;
     height: 40px;
@@ -37,28 +35,33 @@ button{
     border: none;
     border-radius: 20px;
 }
-/*.only-button{
-    width: 60px;
-    height: 40px;
-    background-color: white; 
-    border: none;
-    border-radius: 20px;
-}*/
 .only-button:active{
     border: none;
     background-color: black;
     color: white;
 }
-/* button:active{
+.only-button:visited{
     border: none;
     background-color: black;
     color: white;
-} */
-#logo-p{
-    border-radius: 5px;
 }
-#logo-p:active{
-    background-color: gray;
+.dropdown-create{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-create-elements{
+    display: none;
+    position: absolute;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
+    background-color: white;
+    height: auto;
+}
+.dropdown-create:hover .dropdown-create-elements{
+    justify-content: left;
+    position: fixed;
+    display: block;
+    height: auto;
 }
 #look-for{
     border-radius: 20px;
@@ -70,13 +73,6 @@ button{
 #look-for:focus{
     outline: none;
     border: 3px solid rgb(144, 198, 216);
-}
-#perfil{
-    background-color: black;
-    border-radius: 25px;
-}
-#perfil:hover{
-    background-color: gray;
 }
 .button-nav{
     display: contents;
@@ -98,47 +94,54 @@ button{
 .img-button-nav:hover{
     background-color: rgb(212, 198, 198);
 }
-.desplegable{
+.dropdown-options{
     display: inline-block;
     position: relative;
+    
 }
-.desplegable-elementos{
+.dropdown-options-elements{
     display: none;
     position: absolute;
-    width: 100%;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
     background-color: white;
+    height: auto;
 }
-.desplegable:hover .desplegable-elementos {
+.dropdown-options:hover .dropdown-options-elements {
     justify-content: left;
     position: fixed;
     display: block;
-    width: 100px;
     height: auto;
+    right: 0%;
 }
-.desplegable-elementos section{
+.dropdown-options-elements section{
     display: block;
     color: #000000;
     padding: 5px;
     text-decoration: none;
 }
-.desplegable-elementos section:hover {
-    color: black;
 
-}
 .frame-options{
     display: block;
     margin-bottom: 5px;
 }
-.opt-button:hover{
+.down-button{
+    display: block;
+    width: max-content;
+    border-radius: 5%;
+    margin: 4px 1px;
+}
+.down-button:hover{
     background-color: rgb(212, 198, 198);
+}
+.header-menu{
+    margin: 1px 1px;
 }
 .feed-images{
     columns: 6;
 }
 .images{
-    /* max-width: 100%; */
+    max-width: 100%;
     margin: 15px 10px;
     width: 225px;
     height: auto;
