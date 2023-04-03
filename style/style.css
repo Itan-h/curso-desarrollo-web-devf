@@ -1,6 +1,6 @@
  *{
     box-sizing: border-box;
-    outline: 1px solid greenyellow !important; 
+    outline: 1px solid greenyellow !important;  
     
 } 
 #frame-nav{
@@ -28,6 +28,7 @@ ul{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 2%;
 }
 button{
     width: 60px;
@@ -35,6 +36,9 @@ button{
     background-color: white;
     border: none;
     border-radius: 20px;
+}
+.only-button{
+    width: max-content;
 }
 .only-button:active{
     border: none;
@@ -75,17 +79,17 @@ button{
     outline: none;
     border: 3px solid rgb(144, 198, 216);
 }
-.button-nav{
+/* .button-nav{
     display: contents;
     width: 30px;
     height: 30px;
     background-color: white;
     border: none;
     border-radius: 20px;
-}
-.button-nav:hover{
+} */
+/* .button-nav:hover{
     background-color: gray;
-}
+} */
 .img-button-nav{
     width: 40px;
     height: 40px;
@@ -167,14 +171,17 @@ button{
 }
 .frame-img:hover .save {
     display: flex;
-    top: 25px;
-    right: 10px;
+    top: 8%;
+    right: 4%;
 }
 .frame-img:hover .low {
     display: flex;
     height: auto;
-    right: 10px;
-    bottom: 25px;
+    right: 5%;
+    bottom: 8%;
+}
+.frame-img input{
+    width: 100%;
 }
 .feed-images{
     columns: 6;
@@ -185,4 +192,59 @@ button{
     width: 225px;
     height: auto;
     border-radius: 10px;
+}
+@media (max-width: 1250px) {
+    .feed-images {
+        columns: 5;
+    }
+    nav{
+        width: auto;
+    }
+}
+@media (max-width: 1000px) {
+    .feed-images {
+        columns: 4;
+    }
+}
+@media (max-width: 750px) {
+    .feed-images {
+        columns: 3;
+    }
+}
+@media (max-width: 450px) {
+    .feed-images {
+        columns: 2;
+    }
+    .images{
+        width: 155px;
+    }
+    nav{
+        width: 100%;
+    }
+    nav li{
+        padding: 0px 2px;
+    }
+    #look-for{
+        width: 80px;
+        height: 20px;
+        font-size: 8px;
+    }
+    .img-button-nav{
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+    }
+    .only-button{
+        font-size: 8px;
+        height: auto;
+    }
+    #create-button{
+        font-size: 8px;
+        width: max-content;
+        height: auto;
+    }
+    #dropdown{
+        width: 10px;
+        height: 10px;
+    }
 }
