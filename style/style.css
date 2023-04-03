@@ -1,10 +1,11 @@
  *{
     box-sizing: border-box;
-    /* outline: 1px solid greenyellow !important; */
+    outline: 1px solid greenyellow !important; 
     
 } 
 #frame-nav{
     margin-bottom: 70px;
+    background-color: rebeccapurple;
 }
 nav{
     /* display: flex; */
@@ -120,7 +121,6 @@ button{
     padding: 5px;
     text-decoration: none;
 }
-
 .frame-options{
     display: block;
     margin-bottom: 5px;
@@ -139,8 +139,6 @@ button{
 }
 .frame-img{
     display: inline-block;
-    position: relative;
-    
 }
 .save{
     display: none;
