@@ -79,17 +79,6 @@ button{
     outline: none;
     border: 3px solid rgb(144, 198, 216);
 }
-/* .button-nav{
-    display: contents;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    border: none;
-    border-radius: 20px;
-} */
-/* .button-nav:hover{
-    background-color: gray;
-} */
 .img-button-nav{
     width: 40px;
     height: 40px;
@@ -205,14 +194,14 @@ button{
         margin: 0px 50px;
     }
     #look-for{
-        width: 850px;
+        width: 900px;
         height: 50px;
         font-size: 20px;
     }
     .only-button{
-        font-size: 30px;
+        font-size: 40px;
         height: auto;
-        margin: 0px 40px;
+        margin: 0px 50px;
     }
     #create-button{
         font-size: 30px;
