@@ -1,8 +1,11 @@
  *{
     box-sizing: border-box;
-    outline: 1px solid greenyellow !important;  
+    /* outline: 1px solid greenyellow !important;   */
     
 } 
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 #frame-nav{
     margin-bottom: 70px;
     background-color: rebeccapurple;
@@ -334,6 +337,17 @@ button{
     .down-button{
         font-size: 20px;
         height: auto;
+    }
+    .frame-img:hover .save {
+        display: flex;
+        top: 8%;
+        right: 8%;
+    }
+    .frame-img:hover .low {
+        display: flex;
+        height: auto;
+        right: 7%;
+        bottom: 8%;
     }
 } 
 @media (max-width: 1250px) {
